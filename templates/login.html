@@ -1,0 +1,21 @@
+{%extends 'base.html'%} {%block title%}Code Store - Log In{%endblock%} {%block
+content%}
+
+<div class="container">
+  <h1 class="mt-5 mb-3">Log In</h1>
+  <form action="/login" method="post">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" class="form-control" id="username" name="username" required /><br />
+    </div>
+
+    <div class="mb-3">
+      <label for="password">Password:</label>
+      <input type="password" class="form-control" id="password" name="password" required /><br />
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">submit</button>
+  </form>
+</div>
+
+{%endblock%}
